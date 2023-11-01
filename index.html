@@ -49,23 +49,40 @@
         text-align: center;
         margin: 10px 0;
       }
+      .cook-intro-pic {
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .cook-intro-pic:hover {
+        filter: grayscale(50%);
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
     <button class="theme-btn">Dark Theme</button>
     <div class="container">
       <h1>Cooking with me</h1>
-      <img
-        src="https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg"
-      />
+      <a
+        href="https://www.eater.com/2020/4/3/21203517/easy-cooking-recipes-tips-tricks-roast-chicken-vegetables-rice-beans"
+        target="_blank"
+      >
+        <img
+          src="https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg"
+          alt=""
+          class="cook-intro-pic"
+      /></a>
       <img
         src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_800,h_400/k%2FPhoto%2FSeries%2F2019-10-Cooking-School%2F2019-10-Cooking-School-Sign-Up%2F2019_cookingschool_shot01_029_2x1"
+        alt=""
       />
       <img
         src="https://media.cntraveler.com/photos/64ac2a3fe86ef621f54afd4a/master/w_1600%2Cc_limit/How-Taking-a-Cooking-Class-In-Italy-Helped-Me-Face-My-Eating-Disorder_IMG_4181.jpg"
+        alt=""
       />
       <img
         src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/08/baking-ingredients.jpg?quality=82&strip=all&w=640"
+        alt=""
       />
       <p>
         I love to cook. I love cooking all different types of recipes and
@@ -73,6 +90,8 @@
       </p>
       <button>Cooking reference</button>
     </div>
-    <footer>Coded by Tracey</footer>
+    <footer>
+      Coded by <a href="https://github.com/tbtreppe/basic-hobby-page">Tracey</a>
+    </footer>
   </body>
 </html>
