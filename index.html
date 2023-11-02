@@ -57,6 +57,20 @@
         filter: grayscale(50%);
         transform: scale(1.1);
       }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
     </style>
   </head>
   <body>
@@ -72,18 +86,24 @@
           alt=""
           class="cook-intro-pic"
       /></a>
-      <img
-        src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_800,h_400/k%2FPhoto%2FSeries%2F2019-10-Cooking-School%2F2019-10-Cooking-School-Sign-Up%2F2019_cookingschool_shot01_029_2x1"
-        alt=""
-      />
-      <img
-        src="https://media.cntraveler.com/photos/64ac2a3fe86ef621f54afd4a/master/w_1600%2Cc_limit/How-Taking-a-Cooking-Class-In-Italy-Helped-Me-Face-My-Eating-Disorder_IMG_4181.jpg"
-        alt=""
-      />
-      <img
-        src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/08/baking-ingredients.jpg?quality=82&strip=all&w=640"
-        alt=""
-      />
+      <div class="grid">
+        <img
+          src="https://www.southernliving.com/thmb/-LjGBiKA5HDtGFzb2fu0GhZ5s04=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-1129093556-2000-0887e708adec4866bc94b66ed295945c.jpg"
+          alt=""
+        />
+        <img
+          src="https://www.foodandwine.com/thmb/O2ZjV3L_cNcz258bkrDgrYPanD0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/What-Is-Chaos-Cooking-TikToks-Latest-Obsession-FT-BLOG0723-be130eb8cffe400eb13ccfbe47de733a.jpg"
+          alt=""
+        />
+        <img
+          src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/08/baking-ingredients.jpg?quality=82&strip=all&w=640"
+          alt=""
+        />
+        <img
+          src="https://littlelosttravel.com/wp-content/uploads/2020/03/Shakshuka--scaled.jpg"
+          alt=""
+        />
+      </div>
       <p>
         I love to cook. I love cooking all different types of recipes and
         appreciate a good challenge!
