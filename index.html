@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Cooking hobby</title>
     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       h1 {
         text-align: center;
       }
@@ -71,10 +74,20 @@
       .grid img:hover {
         transform: scale(2);
       }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: blue;
+      }
     </style>
   </head>
   <body>
-    <button class="theme-btn">Dark Theme</button>
+    <button class="theme-btn">Change Theme</button>
     <div class="container">
       <h1>Cooking with me</h1>
       <a
@@ -113,5 +126,13 @@
     <footer>
       Coded by <a href="https://github.com/tbtreppe/basic-hobby-page">Tracey</a>
     </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeBtn = document.querySelector(".theme-btn");
+      themeBtn.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
